@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hygine Care - Pure Hygiene, Trusted Quality</title>
+    <meta name="description" content="Premium cleaning and hygiene solutions for your home and business. Shop quality hygiene products online.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧼</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>The Hygine Care</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#products" class="nav-btn">Shop Now</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Pure Hygiene, Trusted Quality</h1>
+                <p class="hero-subtitle">Premium cleaning and hygiene solutions for your home and business.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Explore Products</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-subtitle">High-quality hygiene and cleaning solutions for every need</p>
+            </div>
+            <!-- Product Categories -->
+            <div class="product-categories">
+                
+                <!-- Cleaning Products Category -->
+                <div class="product-category">
+                    <div class="category-header">
+                        <h3 class="category-title">🧽 Cleaning Products</h3>
+                        <button class="explore-more-btn" onclick="showCategoryModal('cleaning')">Explore More</button>
+                    </div>
+                    <div class="products-slider" id="cleaning-slider">
+                        <div class="slider-container">
+                            <div class="products-row">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/WhatsApp Image 2025-10-13 at 10.11.39 PM.jpeg" alt="Surface Cleaner">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Surface Cleaner</h3>
+                                        <p class="product-description">Multi-surface cleaner for kitchens, bathrooms, and more.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/WhatsApp Image 2025-10-13 at 10.11.41 PM.jpeg" alt="Toilet Cleaner">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Toilet Cleaner</h3>
+                                        <p class="product-description">Heavy-duty toilet cleaner with bleach formula.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/WhatsApp Image 2025-10-13 at 10.11.41 PM (1).jpeg" alt="Glass Cleaner">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Glass Cleaner</h3>
+                                        <p class="product-description">Streak-free glass cleaner for crystal clear windows.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/WhatsApp Image 2025-10-13 at 10.11.41 PM (2).jpeg" alt="Floor Disinfectant">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Floor Disinfectant</h3>
+                                        <p class="product-description">All-in-one floor cleaner and disinfectant solution.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev-btn" onclick="slideCategory('cleaning', 'prev')">❮</button>
+                        <button class="slider-btn next-btn" onclick="slideCategory('cleaning', 'next')">❯</button>
+                    </div>
+                </div>
+
+                <!-- Hygiene Products Category -->
+                <div class="product-category">
+                    <div class="category-header">
+                        <h3 class="category-title">🧴 Hygiene Products</h3>
+                        <button class="explore-more-btn" onclick="showCategoryModal('hygiene')">Explore More</button>
+                    </div>
+                    <div class="products-slider" id="hygiene-slider">
+                        <div class="slider-container">
+                            <div class="products-row">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/WhatsApp Image 2025-10-13 at 10.11.35 PM.jpeg" alt="Hand Sanitizer">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Hand Sanitizer</h3>
+                                        <p class="product-description">Alcohol-based sanitizer for instant hand hygiene protection.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/anti becterial spray.jpeg" alt="Anti Bacterial Spray">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Anti Bacterial Spray</h3>
+                                        <p class="product-description">Advanced antibacterial spray for enhanced protection.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/hand dryier.jpeg" alt="Hand Dryer">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Hand Dryer</h3>
+                                        <p class="product-description">Electric hand dryer for hygienic hand drying.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev-btn" onclick="slideCategory('hygiene', 'prev')">❮</button>
+                        <button class="slider-btn next-btn" onclick="slideCategory('hygiene', 'next')">❯</button>
+                    </div>
+                </div>
+
+                <!-- Wipes & Tissues Category -->
+                <div class="product-category">
+                    <div class="category-header">
+                        <h3 class="category-title">🧻 Wipes & Tissues</h3>
+                        <button class="explore-more-btn" onclick="showCategoryModal('wipes')">Explore More</button>
+                    </div>
+                    <div class="products-slider" id="wipes-slider">
+                        <div class="slider-container">
+                            <div class="products-row">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/WhatsApp Image 2025-10-13 at 10.11.42 PM.jpeg" alt="Multipurpose Wipes">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Multipurpose Wipes</h3>
+                                        <p class="product-description">Convenient disposable wipes for quick cleaning.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/WhatsApp Image 2025-10-13 at 10.11.44 PM.jpeg" alt="Tissue Box">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Tissue Box</h3>
+                                        <p class="product-description">Soft and absorbent tissues for everyday use.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/WhatsApp Image 2025-10-13 at 10.11.45 PM.jpeg" alt="Toilet Paper">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Toilet Paper</h3>
+                                        <p class="product-description">Premium quality toilet paper for comfort and hygiene.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/WhatsApp Image 2025-10-13 at 10.11.45 PM (1).jpeg" alt="Paper Towels">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Paper Towels</h3>
+                                        <p class="product-description">Strong and absorbent paper towels for cleaning.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/WhatsApp Image 2025-10-13 at 10.47.04 PM.jpeg" alt="Coffee Tissues">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Coffee Tissues</h3>
+                                        <p class="product-description">Specialized tissues for coffee and beverage cleanup.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/WhatsApp Image 2025-10-13 at 10.47.06 PM.jpeg" alt="Luxury Tissues">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Luxury Tissues</h3>
+                                        <p class="product-description">Premium luxury tissues with extra softness.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev-btn" onclick="slideCategory('wipes', 'prev')">❮</button>
+                        <button class="slider-btn next-btn" onclick="slideCategory('wipes', 'next')">❯</button>
+                    </div>
+                </div>
+
+                <!-- Air Care Category -->
+                <div class="product-category">
+                    <div class="category-header">
+                        <h3 class="category-title">🌸 Air Care</h3>
+                        <button class="explore-more-btn" onclick="showCategoryModal('aircare')">Explore More</button>
+                    </div>
+                    <div class="products-slider" id="aircare-slider">
+                        <div class="slider-container">
+                            <div class="products-row">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/air freshner machine.jpeg" alt="Air Freshener Machine">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Air Freshener Machine</h3>
+                                        <p class="product-description">Automatic air freshener machine for continuous fragrance.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/air freshner1.jpeg" alt="Premium Air Freshener">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Premium Air Freshener</h3>
+                                        <p class="product-description">Premium quality air freshener with long-lasting scent.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/air freshner2.jpeg" alt="Deluxe Air Freshener">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Deluxe Air Freshener</h3>
+                                        <p class="product-description">Deluxe air freshener with natural ingredients.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/air freshner3.jpeg" alt="Advanced Air Freshener">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Advanced Air Freshener</h3>
+                                        <p class="product-description">Advanced air freshener with odor elimination.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn prev-btn" onclick="slideCategory('aircare', 'prev')">❮</button>
+                        <button class="slider-btn next-btn" onclick="slideCategory('aircare', 'next')">❯</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About The Hygine Care</h2>
+                    <p class="about-description">
+                        At The Hygine Care, we are committed to providing premium hygiene and cleaning solutions 
+                        that ensure the safety and well-being of your family and business. With over a decade of 
+                        experience in the industry, we have built our reputation on trust, quality, and innovation.
+                    </p>
+                    <p class="about-description">
+                        Our products are formulated using the finest ingredients and cutting-edge technology to 
+                        deliver exceptional cleaning power while being gentle on surfaces and safe for the environment. 
+                        Every product undergoes rigorous testing to meet the highest standards of hygiene and effectiveness.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>Quality Assured</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Eco-Friendly</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Safe & Tested</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23e3f2fd'/><text x='50%' y='50%' font-size='40' text-anchor='middle' dy='.3em'>🏭</text><text x='50%' y='70%' font-size='16' text-anchor='middle'>Modern Production Facility</text></svg>" alt="Production Facility">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real feedback from satisfied customers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Excellent quality products! The hand sanitizer has become a staple in our office. 
+                            Great customer service and fast delivery."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><circle cx='30' cy='30' r='30' fill='%234a90e2'/><text x='50%' y='50%' font-size='24' text-anchor='middle' dy='.3em' fill='white'>👨</text></svg>" alt="Ahmad Ali">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Ahmad Ali</h4>
+                            <p class="author-title">Office Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The surface cleaner is amazing! It removes tough stains effortlessly and leaves 
+                            everything sparkling clean. Highly recommend!"
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><circle cx='30' cy='30' r='30' fill='%234a90e2'/><text x='50%' y='50%' font-size='24' text-anchor='middle' dy='.3em' fill='white'>👨</text></svg>" alt="Hassan Khan">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Hassan Khan</h4>
+                            <p class="author-title">Restaurant Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Great value for money! The multipurpose wipes are perfect for quick cleanups 
+                            around the house. Will definitely order again."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><circle cx='30' cy='30' r='30' fill='%234a90e2'/><text x='50%' y='50%' font-size='24' text-anchor='middle' dy='.3em' fill='white'>👩</text></svg>" alt="Fatima Sheikh">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">Fatima Sheikh</h4>
+                            <p class="author-title">Homemaker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send via WhatsApp</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>MM Alam Road<br>Lahore, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+923184636870</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>shoploom159@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>24/7 Available<br>Always at your service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Hygine Care</h3>
+                    <p>Pure hygiene, trusted quality. Your partner in cleanliness and safety.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Hygine Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
