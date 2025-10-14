@@ -528,47 +528,36 @@ function showCategoryModal(categoryId) {
         cleaning: {
             title: '🧽 Cleaning Products',
             products: [
-                { name: 'Surface Cleaner', description: 'Multi-surface cleaner for kitchens, bathrooms, and more.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.39 PM.jpeg' },
-                { name: 'Toilet Cleaner', description: 'Heavy-duty toilet cleaner with bleach formula.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.41 PM.jpeg' },
-                { name: 'Glass Cleaner', description: 'Streak-free glass cleaner for crystal clear windows.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.41 PM (1).jpeg' },
-                { name: 'Floor Disinfectant', description: 'All-in-one floor cleaner and disinfectant solution.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.41 PM (2).jpeg' },
-                { name: 'Kitchen Cleaner', description: 'Specialized cleaner for kitchen surfaces and appliances.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.47 PM.jpeg' },
+                { name: 'Detergents', description: 'High-quality detergents for laundry and cleaning needs.', image: 'products images/detergents.jpeg' },
+                { name: 'Floor Cleaner', description: 'Powerful floor cleaner for all types of flooring.', image: 'products images/floor cleaner.jpeg' },
                 { name: 'Insect Killer', description: 'Effective insect killer for pest control and elimination.', image: 'products images/insect killer.jpeg' }
             ]
         },
         hygiene: {
             title: '🧴 Hygiene Products',
             products: [
-                { name: 'Hand Sanitizer', description: 'Alcohol-based sanitizer for instant hand hygiene protection.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.35 PM.jpeg' },
-                { name: 'Disinfectant Spray', description: 'Powerful disinfectant spray that kills 99.9% of germs.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.40 PM (1).jpeg' },
+                { name: 'Hand Sanitizer', description: 'Alcohol-based sanitizer for instant hand hygiene protection.', image: 'products images/hand senitizer.jpeg' },
                 { name: 'Anti Bacterial Spray', description: 'Advanced antibacterial spray for enhanced protection.', image: 'products images/anti becterial spray.jpeg' },
-                { name: 'Hand Dryer', description: 'Electric hand dryer for hygienic hand drying.', image: 'products images/hand dryier.jpeg' }
+                { name: 'Hand Dryer', description: 'Electric hand dryer for hygienic hand drying.', image: 'products images/hand dryier.jpeg' },
+                { name: 'Hand Wash', description: 'Gentle and effective hand wash for daily hygiene.', image: 'products images/hand wash.jpeg' }
             ]
         },
         wipes: {
             title: '🧻 Wipes & Tissues',
             products: [
-                { name: 'Multipurpose Wipes', description: 'Convenient disposable wipes for quick cleaning.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.42 PM.jpeg' },
-                { name: 'Tissue Box', description: 'Soft and absorbent tissues for everyday use.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.44 PM.jpeg' },
-                { name: 'Toilet Paper', description: 'Premium quality toilet paper for comfort and hygiene.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.45 PM.jpeg' },
-                { name: 'Paper Towels', description: 'Strong and absorbent paper towels for cleaning.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.45 PM (1).jpeg' },
-                { name: 'Wet Wipes', description: 'Moist wipes for sensitive cleaning tasks.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.45 PM (2).jpeg' },
-                { name: 'Baby Wipes', description: 'Gentle baby wipes for delicate skin.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.46 PM.jpeg' },
                 { name: 'Hygiene Tissue', description: 'Specialized hygiene tissues for personal care.', image: 'products images/hygiene tissue.jpeg' },
                 { name: 'Printed Tissue', description: 'Custom printed tissues for branding and promotion.', image: 'products images/printed tissue.jpeg' },
                 { name: 'Table Tissue', description: 'Table tissues for dining and hospitality use.', image: 'products images/table tissu.jpeg' },
                 { name: 'Bulk Tissues', description: 'Economy pack tissues for office and home use.', image: 'products images/bulk tissues.jpeg' },
-                { name: 'Coffee Tissues', description: 'Specialized tissues for coffee and beverage cleanup.', image: 'products images/WhatsApp Image 2025-10-13 at 10.47.04 PM.jpeg' },
-                { name: 'Premium Tissues', description: 'High-quality tissues for superior comfort and absorption.', image: 'products images/WhatsApp Image 2025-10-13 at 10.47.04 PM (1).jpeg' },
-                { name: 'Luxury Tissues', description: 'Premium luxury tissues with extra softness.', image: 'products images/WhatsApp Image 2025-10-13 at 10.47.06 PM.jpeg' },
-                { name: 'Eco-Friendly Tissues', description: 'Environmentally friendly tissues made from recycled materials.', image: 'products images/WhatsApp Image 2025-10-13 at 10.47.06 PM (2).jpeg' }
+                { name: 'Tissue Box', description: 'Soft and absorbent tissues for everyday use.', image: 'products images/tissue box.jpeg' },
+                { name: 'Tissue Roll', description: 'Convenient tissue rolls for continuous use.', image: 'products images/tissue roll.jpeg' },
+                { name: 'Toilet Tissue Roll', description: 'Premium quality toilet tissue rolls for comfort and hygiene.', image: 'products images/tolilet tissue roll.jpeg' },
+                { name: 'Disposable Coffee Cups', description: 'Eco-friendly disposable coffee cups for beverages.', image: 'products images/dispoible coffe cups.jpeg' }
             ]
         },
         aircare: {
             title: '🌸 Air Care',
             products: [
-                { name: 'Air Freshener', description: 'Long-lasting air freshener for pleasant fragrance.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.40 PM.jpeg' },
-                { name: 'Room Spray', description: 'Instant room freshener with natural fragrances.', image: 'products images/WhatsApp Image 2025-10-13 at 10.11.46 PM.jpeg' },
                 { name: 'Air Freshener Machine', description: 'Automatic air freshener machine for continuous fragrance.', image: 'products images/air freshner machine.jpeg' },
                 { name: 'Premium Air Freshener 1', description: 'Premium quality air freshener with long-lasting scent.', image: 'products images/air freshner1.jpeg' },
                 { name: 'Premium Air Freshener 2', description: 'Deluxe air freshener with natural ingredients.', image: 'products images/air freshner2.jpeg' },
@@ -673,7 +662,7 @@ function showCategoryModal(categoryId) {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('The Hygine Care website loaded successfully!');
+    console.log('The Hygiene Care website loaded successfully!');
     
     // Add loading class to body for CSS animations
     document.body.classList.add('page-loaded');
