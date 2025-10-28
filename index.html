@@ -17,6 +17,8 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="banner.css">
+    
 </head>
 <body>
     <!-- Header / Navbar -->
@@ -43,19 +45,26 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Pure Hygiene, Trusted Quality</h1>
-                <p class="hero-subtitle">Premium cleaning and hygiene solutions for your home and business.</p>
-                <div class="hero-buttons">
-                    <a href="#products" class="btn btn-primary">Explore Products</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
-                </div>
+    <!-- Hero Banner Section -->
+    <section class="banner-slider" id="home">
+        <div class="slider-container">
+            <!-- Dynamic banner slides -->
+            <div class="slide">
+                <img src="banner/1.jpg" alt="Hygiene Products Banner 1">
             </div>
+           
+            <div class="slide">
+                <img src="banner/4.jpg" alt="Hygiene Products Banner 4">
+            </div>
+           
+
+            <!-- Navigation arrows -->
+            <button class="slider-nav prev" aria-label="Previous slide">❮</button>
+            <button class="slider-nav next" aria-label="Next slide">❯</button>
+
+            <!-- Slide indicators -->
+            <div class="slider-indicators"></div>
         </div>
-        <div class="hero-overlay"></div>
     </section>
 
     <!-- Products Section -->
@@ -96,6 +105,30 @@
                                     <div class="product-content">
                                         <h3 class="product-name">Floor Cleaner</h3>
                                         <p class="product-description">Powerful floor cleaner for all types of flooring.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/floor cleaner2.png" alt="Floor Cleaner 2">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Advanced Floor Cleaner</h3>
+                                        <p class="product-description">Premium floor cleaner with enhanced cleaning power and fresh scent.</p>
+                                        <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
+                                        <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="products images/floor cleaner3.avif" alt="Floor Cleaner 3">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Professional Floor Cleaner</h3>
+                                        <p class="product-description">Commercial-grade floor cleaner for heavy-duty cleaning applications.</p>
                                         <a href="#" class="read-more-link" onclick="showWhatsAppNumber('+923184636870')">Read More</a>
                                         <button class="btn btn-product" onclick="showWhatsAppNumber('+923184636870')">Add to Cart</button>
                                     </div>
@@ -427,7 +460,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='%23e3f2fd'/><text x='50%' y='50%' font-size='40' text-anchor='middle' dy='.3em'>🏭</text><text x='50%' y='70%' font-size='16' text-anchor='middle'>Modern Production Facility</text></svg>" alt="Production Facility">
+                    <img src="company site.jpeg" alt="Production Facility">
                 </div>
             </div>
         </div>
@@ -527,20 +560,19 @@
                 <p class="section-subtitle">We'd love to hear from you</p>
             </div>
             <div class="contact-content">
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send via WhatsApp</button>
-                    </form>
+                <!-- CEO Photo and Information Block (Left Side) -->
+                <div class="ceo-info-container">
+                    <div class="ceo-photo-container">
+                        <img src="comapny ceo.jpeg" alt="M.Talha Zaib - CEO" class="ceo-photo">
+                    </div>
+                    <div class="ceo-details">
+                        <h3 class="ceo-name">M.Talha Zaib</h3>
+                        <p class="ceo-designation">CEO & Operations Lead</p>
+                        <p class="ceo-description">Here to assist you with all Hygiene product needs.</p>
+                    </div>
                 </div>
+                
+                <!-- Contact Information (Right Side) -->
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>

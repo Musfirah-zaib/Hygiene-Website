@@ -12,8 +12,9 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #2c3e50;
     overflow-x: hidden;
+    background: #f8fafc;
 }
 
 .container {
@@ -28,8 +29,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(248, 250, 252, 0.95);
     backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.1);
     z-index: 1000;
     transition: all 0.3s ease;
 }
@@ -48,7 +50,7 @@ body {
 }
 
 .nav-logo h2 {
-    color: #2196F3;
+    color: #1e40af;
     font-weight: 700;
     font-size: 1.8rem;
 }
@@ -61,14 +63,14 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #475569;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
 }
 
 .nav-link:hover {
-    color: #2196F3;
+    color: #1e40af;
 }
 
 .nav-link::after {
@@ -78,7 +80,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #2196F3;
+    background: linear-gradient(90deg, #1e40af, #3b82f6);
     transition: width 0.3s ease;
 }
 
@@ -87,19 +89,19 @@ body {
 }
 
 .nav-btn {
-    background: linear-gradient(135deg, #4CAF50, #45a049);
+    background: linear-gradient(135deg, #059669, #10b981);
     color: white;
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
 }
 
 .nav-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+    box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
 }
 
 .nav-toggle {
@@ -173,14 +175,14 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #2196F3, #1976D2);
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
     color: white;
-    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+    box-shadow: 0 6px 20px rgba(30, 64, 175, 0.4);
 }
 
 .btn-secondary {
@@ -191,12 +193,12 @@ body {
 
 .btn-secondary:hover {
     background: white;
-    color: #2196F3;
+    color: #1e40af;
     transform: translateY(-3px);
 }
 
 .btn-product {
-    background: linear-gradient(135deg, #4CAF50, #45a049);
+    background: linear-gradient(135deg, #059669, #10b981);
     color: white;
     width: 100%;
     margin-top: 1rem;
@@ -204,7 +206,7 @@ body {
 
 .btn-product:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
 }
 
 /* Section Styles */
@@ -216,13 +218,13 @@ body {
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #333;
+    color: #1e293b;
     margin-bottom: 1rem;
 }
 
 .section-subtitle {
     font-size: 1.1rem;
-    color: #666;
+    color: #64748b;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -230,7 +232,7 @@ body {
 /* Products Section */
 .products {
     padding: 6rem 0;
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
 }
 
 .product-categories {
@@ -252,12 +254,12 @@ body {
 .category-title {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #333;
+    color: #1e293b;
     margin: 0;
 }
 
 .explore-more-btn {
-    background: linear-gradient(135deg, #2196F3, #1976D2);
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -271,7 +273,7 @@ body {
 
 .explore-more-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+    box-shadow: 0 6px 20px rgba(30, 64, 175, 0.4);
 }
 
 .products-slider {
@@ -407,7 +409,7 @@ body {
 /* About Section */
 .about {
     padding: 6rem 0;
-    background: white;
+    background: linear-gradient(135deg, #ffffff, #f8fafc);
 }
 
 .about-content {
@@ -423,7 +425,7 @@ body {
 }
 
 .about-description {
-    color: #666;
+    color: #64748b;
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
     line-height: 1.8;
@@ -440,7 +442,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #2196F3;
+    color: #1e40af;
     font-weight: 600;
 }
 
@@ -461,7 +463,7 @@ body {
 /* Testimonials Section */
 .testimonials {
     padding: 6rem 0;
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
 }
 
 .testimonials-grid {
@@ -475,15 +477,16 @@ body {
     background: white;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     opacity: 0;
     transform: translateY(30px);
+    border: 1px solid rgba(30, 64, 175, 0.1);
 }
 
 .testimonial-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 30px rgba(30, 64, 175, 0.15);
 }
 
 .testimonial-card.animate {
@@ -531,7 +534,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 6rem 0;
-    background: white;
+    background: linear-gradient(135deg, #ffffff, #f8fafc);
 }
 
 .contact-content {
@@ -539,34 +542,70 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-top: 2rem;
+    align-items: center;
 }
 
-.contact-form {
-    background: #f8f9fa;
+/* CEO Information Block Styles */
+.ceo-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(30, 64, 175, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(30, 64, 175, 0.1);
 }
 
-.form-group {
+.ceo-info-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.15);
+}
+
+.ceo-photo-container {
     margin-bottom: 1.5rem;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
+.ceo-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #1e40af;
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.3);
+    transition: all 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #2196F3;
+.ceo-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(30, 64, 175, 0.4);
+}
+
+.ceo-details {
+    max-width: 300px;
+}
+
+.ceo-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.ceo-designation {
+    font-size: 1.1rem;
+    color: #1e40af;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.ceo-description {
+    font-size: 1rem;
+    color: #64748b;
+    line-height: 1.6;
+    font-style: italic;
 }
 
 .contact-info {
@@ -583,23 +622,23 @@ body {
 
 .contact-item i {
     font-size: 1.5rem;
-    color: #2196F3;
+    color: #1e40af;
     margin-top: 0.2rem;
 }
 
 .contact-item h4 {
-    color: #333;
+    color: #1e293b;
     margin-bottom: 0.5rem;
 }
 
 .contact-item p {
-    color: #666;
+    color: #64748b;
     line-height: 1.6;
 }
 
 /* Footer */
 .footer {
-    background: #333;
+    background: linear-gradient(135deg, #1e293b, #334155);
     color: white;
     padding: 3rem 0 1rem;
 }
@@ -614,7 +653,7 @@ body {
 .footer-section h3,
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: #2196F3;
+    color: #3b82f6;
 }
 
 .footer-section p {
@@ -653,7 +692,7 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: #2196F3;
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
     color: white;
     border-radius: 50%;
     text-decoration: none;
@@ -661,7 +700,7 @@ body {
 }
 
 .social-link:hover {
-    background: #1976D2;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
     transform: translateY(-2px);
 }
 
@@ -681,17 +720,18 @@ body {
 
 .newsletter-form button {
     padding: 0.8rem 1.5rem;
-    background: #2196F3;
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .newsletter-form button:hover {
-    background: #1976D2;
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    transform: translateY(-1px);
 }
 
 .footer-bottom {
@@ -921,6 +961,24 @@ body {
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    /* CEO Section Mobile Styles */
+    .ceo-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .ceo-name {
+        font-size: 1.5rem;
+    }
+
+    .ceo-designation {
+        font-size: 1rem;
+    }
+
+    .ceo-description {
+        font-size: 0.9rem;
     }
 
     .footer-content {

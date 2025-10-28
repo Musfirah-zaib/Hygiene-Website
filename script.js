@@ -8,6 +8,90 @@ const contactForm = document.getElementById('contact-form');
 navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     navToggle.classList.toggle('active');
+});// Add this after your existing DOM content loaded event listener
+
+// Banner Slider functionality
+function initializeBannerSlider() {
+    const slider = document.querySelector('.banner-slider');
+    if (!slider) return;
+
+    const slides = slider.querySelectorAll('.slide');
+    const prevBtn = slider.querySelector('.prev');
+    const nextBtn = slider.querySelector('.next');
+    const indicators = slider.querySelector('.slider-indicators');
+    
+    let currentSlide = 0;
+    const slideCount = slides.length;
+    let slideInterval;
+
+    // Create indicators
+    slides.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.className = `indicator${index === 0 ? ' active' : ''}`;
+        dot.addEventListener('click', () => goToSlide(index));
+        indicators.appendChild(dot);
+    });
+
+    // Initialize first slide
+    slides[0].classList.add('active');
+
+    function updateSlide() {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[currentSlide].classList.add('active');
+        
+        const dots = indicators.querySelectorAll('.indicator');
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slideCount;
+        updateSlide();
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+        updateSlide();
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        updateSlide();
+        resetInterval();
+    }
+
+    function startInterval() {
+        slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function resetInterval() {
+        clearInterval(slideInterval);
+        startInterval();
+    }
+
+    // Event listeners
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetInterval();
+    });
+
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetInterval();
+    });
+
+    // Start auto-advance
+    startInterval();
+
+    // Pause on hover
+    slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+    slider.addEventListener('mouseleave', startInterval);
+}
+
+// Initialize slider when DOM loads
+document.addEventListener('DOMContentLoaded', () => {
+    initializeBannerSlider();
+    // ...existing DOM content loaded code...
 });
 
 // Close mobile menu when clicking on nav links
@@ -530,6 +614,8 @@ function showCategoryModal(categoryId) {
             products: [
                 { name: 'Detergents', description: 'High-quality detergents for laundry and cleaning needs.', image: 'products images/detergents.jpeg' },
                 { name: 'Floor Cleaner', description: 'Powerful floor cleaner for all types of flooring.', image: 'products images/floor cleaner.jpeg' },
+                { name: 'Advanced Floor Cleaner', description: 'Premium floor cleaner with enhanced cleaning power and fresh scent.', image: 'products images/floor cleaner2.png' },
+                { name: 'Professional Floor Cleaner', description: 'Commercial-grade floor cleaner for heavy-duty cleaning applications.', image: 'products images/floor cleaner3.avif' },
                 { name: 'Insect Killer', description: 'Effective insect killer for pest control and elimination.', image: 'products images/insect killer.jpeg' }
             ]
         },
