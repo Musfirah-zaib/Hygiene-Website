@@ -8,7 +8,58 @@ const contactForm = document.getElementById('contact-form');
 navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
     navToggle.classList.toggle('active');
-});// Add this after your existing DOM content loaded event listener
+});
+
+// Carousel Navigation for Mobile
+function initializeCarouselNav() {
+    const sliders = document.querySelectorAll('.products-slider');
+    
+    sliders.forEach(slider => {
+        const prevBtn = slider.querySelector('.carousel-nav.prev');
+        const nextBtn = slider.querySelector('.carousel-nav.next');
+        const productsRow = slider.querySelector('.products-row');
+        
+        if (!prevBtn || !nextBtn || !productsRow) return;
+        
+        // Scroll amount (one card width plus gap)
+        const scrollAmount = 300;
+        
+        prevBtn.addEventListener('click', () => {
+            productsRow.scrollBy({
+                left: -scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            productsRow.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Update button visibility based on scroll position
+        const updateButtonStates = () => {
+            const isAtStart = productsRow.scrollLeft === 0;
+            const isAtEnd = productsRow.scrollLeft >= productsRow.scrollWidth - productsRow.clientWidth - 10;
+            
+            prevBtn.style.opacity = isAtStart ? '0.5' : '1';
+            prevBtn.style.pointerEvents = isAtStart ? 'none' : 'auto';
+            nextBtn.style.opacity = isAtEnd ? '0.5' : '1';
+            nextBtn.style.pointerEvents = isAtEnd ? 'none' : 'auto';
+        };
+        
+        productsRow.addEventListener('scroll', updateButtonStates);
+        updateButtonStates(); // Initial state
+    });
+}
+
+// Initialize carousel when DOM loads
+document.addEventListener('DOMContentLoaded', () => {
+    initializeCarouselNav();
+});
+
+// Add this after your existing DOM content loaded event listener
 
 // Banner Slider functionality
 function initializeBannerSlider() {
@@ -441,7 +492,7 @@ window.addEventListener('resize', () => {
 });
 
 // Add smooth reveal animation to sections
-const sections = document.querySelectorAll('section');
+const sections = document.querySelectorAll('section:not(.products)');
 const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -801,3 +852,67 @@ const rippleCSS = `
 const style = document.createElement('style');
 style.textContent = rippleCSS;
 document.head.appendChild(style);
+
+// Toggle extra products function
+function toggleExtra(elementId) {
+    const element = document.getElementById(elementId);
+    const button = event.target;
+
+    if (element.style.display === 'none' || element.style.display === '') {
+        element.style.display = 'block';
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(-20px)';
+        element.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+
+        setTimeout(() => {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }, 10);
+
+        button.textContent = 'Show Less';
+    } else {
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(-20px)';
+
+        setTimeout(() => {
+            element.style.display = 'none';
+            button.textContent = 'Show More';
+        }, 300);
+    }
+}
+
+// Toggle extra products group function
+function toggleExtraGroup(groupClass) {
+    const elements = document.querySelectorAll(`.${groupClass}`);
+    const button = event.target;
+    const isHidden = elements[0].style.display === 'none' || elements[0].style.display === '';
+
+    elements.forEach((element, index) => {
+        if (isHidden) {
+            setTimeout(() => {
+                element.style.display = 'block';
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(-20px)';
+                element.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+
+                setTimeout(() => {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }, 10);
+            }, index * 100); // Stagger animation
+        } else {
+            setTimeout(() => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(-20px)';
+
+                setTimeout(() => {
+                    element.style.display = 'none';
+                }, 300);
+            }, index * 50);
+        }
+    });
+
+    setTimeout(() => {
+        button.textContent = isHidden ? 'Show Less' : 'Show More';
+    }, elements.length * 100);
+}
